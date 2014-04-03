@@ -3,14 +3,17 @@ safeql
 
 SQL: The safe parts.
 
-Philosophy:
+Philosophy
+----------
 
 1. Built in, referenceable authentication. 
 2. Built in, referenceable authorization.
 3. Built in, referenceable schema versioning.
 4. Built in, referenceable data versioning.
 
-Opinions.
+Opinions
+--------
+
 1. Tables must have *one* and only one id.
 2. Id's *must* be an id type (guid, int, idc, just needs to be an id type)
 3. selects cannot use comma in from.
@@ -24,7 +27,7 @@ Opinions.
 
 
 Example
-=======
+-------
 
 For example (syntax i just made up off the top of my head). given schema given by:
 
