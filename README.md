@@ -1,7 +1,7 @@
 safeql
 ======
 
-SQL: The safe parts.
+SQL: The safe parts. Some guy favorited my tweet, so now I'm expanding. 
 
 Philosophy
 ----------
@@ -57,4 +57,19 @@ The query:
     group by
       CD.released
 
-would give the java equivalent of HashMap&lt;Date, List&lt;String&gt;&gt; (if your Strings are utf8 java strings are utf16 by default.) representing the list of producers and artists that contributed to or appeared in a CD released on that date. 
+would give the java equivalent of HashMap&lt;Date, List&lt;String&gt;&gt; (if your Strings are utf8 that is, java strings are utf16 by default.) representing the list of producers and artists that contributed to or appeared in a CD released on that date. 
+
+TODO &amp; THOUGHTS
+-------------------
+
+Wow, reading that above there are so many questions I have now, like, what happens if there are two different CDs in the join chain? can you not join a table to itself? (recursive, manually or otherwise)? Maybe throw a compile time error saying "ambiguous join chain, specify alias"
+
+Not sure I like that resultsets are maps by default, but it makes sense sort of from a REST point of view right? Each select query gets it's own GET resource URL? something like db.push([above query]) => add a url to the "UDDI" of sorts. 
+
+How do i feel about nested queries? I use them all the time at work, but is there a better way?
+
+still need to nail down that pesky safe dynamic where clause. 
+
+Maybe switch from interpretted to compiled for security? so that you have to submit your query to the db (and have rights to do so) and then you can only reference said statement?
+
+The above example auto threads with the group by. Is that a non-ambiguous operation? Intuitively it seems like there is a static way to check if it is ambiguous or not, if not completely non-ambiguous. 
