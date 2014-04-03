@@ -3,6 +3,9 @@ safeql
 
 SQL: The safe parts. Some guy favorited my tweet, so now I'm expanding. 
 
+<blockquote class="twitter-tweet" lang="en"><p>Code Idea: SafeQL: a (not-strict) subset of SQL that has strict requirements for normalized ids, joins, selects; safe dynamic where clauses.</p>&mdash; William Laffin (@redwepainted) <a href="https://twitter.com/redwepainted/statuses/451167319784701952">April 2, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 Philosophy
 ----------
 
