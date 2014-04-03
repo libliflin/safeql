@@ -57,4 +57,4 @@ The query:
     group by
       CD.released
 
-would give the java equivalent of HashMap<Date, List<String>> (if your Strings are utf8 java strings are utf16 by default.) representing the list of producers and artists that contributed to or appeared in a CD released on that date. 
+would give the java equivalent of HashMap&lt;Date, List&lt;String&gt;&gt; (if your Strings are utf8 java strings are utf16 by default.) representing the list of producers and artists that contributed to or appeared in a CD released on that date. 
