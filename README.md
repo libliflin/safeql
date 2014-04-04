@@ -75,4 +75,6 @@ still need to nail down that pesky safe dynamic where clause.
 
 Maybe switch from interpretted to compiled for security? so that you have to submit your query to the db (and have rights to do so) and then you can only reference said statement?
 
-The above example auto threads with the group by. Is that a non-ambiguous operation? Intuitively it seems like there is a static way to check if it is ambiguous or not, if not completely non-ambiguous. 
+The above example auto threads with the group by. Is that a non-ambiguous operation? Intuitively it seems like there is a static way to check if it is ambiguous or not, if not completely non-ambiguous.
+
+Maybe I'm going about this the wrong way. A smart enough html compiler should be writing these selects for me. Maybe I just want to make this mainly a schema declaration / export / import helper at first, and then have the goal to incorporate it into insley. 
