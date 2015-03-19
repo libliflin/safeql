@@ -17,8 +17,8 @@ Philosophy
 Opinions
 --------
 
-1. Tables must have *one* and only one id.
-2. Id's *must* be an id type (guid, int, idc, just needs to be an id type)
+1. Tables must have *one* and only one ID.
+2. ID's *must* be an ID type (guid, int, idc, just needs to be an id type)
 3. selects cannot use comma in from.
 4. all joins must be left. 
 5. all inner joins must come before outer joins.
@@ -32,7 +32,7 @@ Opinions
 Example
 -------
 
-For example (syntax i just made up off the top of my head). given schema given by:
+For example (syntax I just made up off the top of my head). given schema given by:
 
     CD:
       released Date
