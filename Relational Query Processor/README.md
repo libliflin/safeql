@@ -1,6 +1,10 @@
 Relational Query Processor
 ==========================
 
-1. Check if the caller is authorized.
-2. Compile SQL into a query plan.
-3. Execute query plan.
+1. Validate
+2. Resolve names and references
+3. Validate Again
+4. Convert to internal language
+5. Authorize
+6. Optimize
+7. Execute 

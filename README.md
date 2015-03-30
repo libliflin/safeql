@@ -60,7 +60,7 @@ The query:
     group by
       CD.released
 
-would give the java equivalent of HashMap&lt;Date, List&lt;String&gt;&gt; (if your Strings are utf8 that is, java strings are utf16 by default.) representing the list of producers and artists that contributed to or appeared in a CD released on that date. 
+would give the java equivalent of HashMap&lt;Date, List&lt;String&gt;&gt; (if your Strings are utf8 that is.. java strings are utf16.) representing the list of producers and artists that contributed to or appeared in a CD released on that date. 
 
 TODO &amp; THOUGHTS
 -------------------
@@ -76,3 +76,7 @@ TODO &amp; THOUGHTS
     -- all sql executed will fail with security error if not from CD, Artist, Producer
     close connection
 8. DDL will have many options for programatic schema declaration.
+9. I want this to be the easiest DBMS to set up.
+10. I want this to be the fastest DBMS to set up.
+11. I want to accept all configurations of other DBMS.
+12. I want to have front ends for all syntaxes other DBMS.
