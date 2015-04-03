@@ -1,8 +1,6 @@
 Query Optimizer
 ===============
 
-Bahoovian cajoleing Optimizers are complicated.
-
 Goal: transform our parsed/rewritten query to a query plan.
 
 Query Plan: a bunch of Operators. See Plan Executor.
@@ -34,3 +32,7 @@ Extensions:
 5. Auto-Tuning Feedback loop. All estimations and planning need to be consistently checked and explored.
 --1. What if there was an index?
 --2. Is the current model of the hardware costs accurate?
+6. Cacheing. Best computation is one you don't have to do. 
+
+
+ALL OF THE ABOVE NEEDS TO BE ABLE TO BE COMPLETELY CONTROLLED WITH OPTIMIZER HINTS.
